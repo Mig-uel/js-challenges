@@ -1,3 +1,11 @@
-function countOccurrences() {}
+function countOccurrences(string, char) {
+  let count = 0
 
-module.exports = countOccurrences;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char) count += 1
+  }
+
+  return count
+}
+
+module.exports = countOccurrences
