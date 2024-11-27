@@ -1,0 +1,11 @@
+{
+  "name": "js-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Mig-uel/js-challenges.git",
+  "author": "Miguel <35431824+Mig-uel@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
