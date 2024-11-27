@@ -1,10 +1,17 @@
 function removeDuplicates(arr) {
-  const newArr = []
+  const newArr = [arr[0]]
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === arr[i + 1]) continue
+    let isDuplicate = false
 
-    newArr.push(arr[i])
+    for (let j = 0; j < newArr.length; j++) {
+      if (arr[i] === newArr[j]) {
+        isDuplicate = true
+        break
+      }
+    }
+
+    if (!isDuplicate) newArr.push(arr[i])
   }
 
   return newArr
