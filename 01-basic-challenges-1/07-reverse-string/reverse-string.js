@@ -1,3 +1,11 @@
-function reverseString() {}
+function reverseString(str) {
+  let reverse = ''
 
-module.exports = reverseString;
+  for (let i = str.length; i > 0; i--) {
+    reverse += str[i - 1]
+  }
+
+  return reverse
+}
+
+module.exports = reverseString
